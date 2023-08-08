@@ -1,12 +1,10 @@
 # Android components
 
-[![Task Status](https://firefox-ci-tc.services.mozilla.com/api/github/v1/repository/mozilla-mobile/android-components/main/badge.svg)](https://firefox-ci-tc.services.mozilla.com/api/github/v1/repository/mozilla-mobile/android-components/main/latest)
-[![Mergify Status](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/mozilla-mobile/android-components&style=flat)](https://mergify.io)
-[![chat.mozilla.org](https://img.shields.io/badge/chat-on%20matrix-51bb9c)](https://chat.mozilla.org/#/room/#android-components:mozilla.org)
+[![Task Status](https://firefox-ci-tc.services.mozilla.com/api/github/v1/repository/mozilla-mobile/firefox-android/main/badge.svg)](https://firefox-ci-tc.services.mozilla.com/api/github/v1/repository/mozilla-mobile/firefox-android/main/latest)
 
 _A collection of Android libraries to build browsers or browser-like applications._
 
-ℹ️ For more information **[see the website](https://mozilla-mobile.github.io/android-components/)**.
+ℹ️ For more information **[see the website](http://mozac.org/)**.
 
 A fully-featured reference browser implementation based on the components can be found in the [reference-browser repository](https://github.com/mozilla-mobile/reference-browser).
 
@@ -268,7 +266,7 @@ _Sample apps using various components._
 ## Command line ##
 
 ```
-$ git clone https://github.com/mozilla-mobile/android-components.git
+$ git clone https://github.com/mozilla-mobile/firefox-android.git
 $ cd android-components
 $ ./gradlew assemble
 ```
@@ -302,7 +300,7 @@ To check your style, run:
 ## Documentation ##
 We use `README.md` files for each component.
 
-If you fix a bug or change an API, you should update [docs/changelog.md](https://github.com/mozilla-mobile/android-components/blob/main/docs/changelog.md).
+If you fix a bug or change an API, you should update [../docs/changelog.md](https://github.com/mozilla-mobile/firefox-android/blob/main/docs/changelog.md).
 
 ## Testing ##
 You are expected to both add tests for code that you write and make sure that your changes do not

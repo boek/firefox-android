@@ -1,7 +1,6 @@
 # Firefox for Android
 
-[![Task Status](https://firefox-ci-tc.services.mozilla.com/api/github/v1/repository/mozilla-mobile/fenix/main/badge.svg)](https://firefox-ci-tc.services.mozilla.com/api/github/v1/repository/mozilla-mobile/fenix/main/latest)
-[![codecov](https://codecov.io/gh/mozilla-mobile/fenix/branch/main/graph/badge.svg)](https://codecov.io/gh/mozilla-mobile/fenix)
+[![Task Status](https://firefox-ci-tc.services.mozilla.com/api/github/v1/repository/mozilla-mobile/firefox-android/main/badge.svg)](https://firefox-ci-tc.services.mozilla.com/api/github/v1/repository/mozilla-mobile/firefox-android/main/latest)
 
 Fenix (internal codename) is the all-new Firefox for Android browser, based on [GeckoView](https://mozilla.github.io/geckoview/) and [Mozilla Android Components](https://mozac.org/).
 
@@ -11,9 +10,9 @@ Fenix (internal codename) is the all-new Firefox for Android browser, based on [
 
 Please read the [Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/) and the [Bugzilla Etiquette guidelines](https://bugzilla.mozilla.org/page.cgi?id=etiquette.html) before filing an issue. This is our professional working environment as much as it is our bug tracker, and we want to keep our workspace clean and healthy.
 
-* [Guide to Contributing](https://github.com/mozilla-mobile/shared-docs/blob/master/android/CONTRIBUTING.md) (**New contributors start here!**)
+* [Guide to Contributing](https://github.com/mozilla-mobile/firefox-android/blob/main/docs/shared/android/CONTRIBUTING.md) (**New contributors start here!**)
 
-* Browse our [current Issues](https://github.com/mozilla-mobile/fenix/issues), or [file a security issue][sec issue].
+* Browse our [current Issues](https://bugzilla.mozilla.org/describecomponents.cgi?product=Fenix), or [file a security issue][sec issue].
 
 * Matrix: [#fenix:mozilla.org channel](https://chat.mozilla.org/#/room/#fenix:mozilla.org) (**We're available Monday-Friday, GMT and PST working hours**). Related channels:
   * [#mobile-test-eng:mozilla.org channel](https://chat.mozilla.org/#/room/#mobile-test-eng:mozilla.org): for UI test automation
@@ -21,18 +20,18 @@ Please read the [Community Participation Guidelines](https://www.mozilla.org/en-
   * [#android-tips:mozilla.org channel](https://chat.mozilla.org/#/room/#android-tips:mozilla.org): for tips on Android development
 
 * Check out the [project wiki](https://github.com/mozilla-mobile/fenix/wiki) for more information.
-  * See [our guide on Writing Custom Lint Rules](https://github.com/mozilla-mobile/shared-docs/blob/master/android/writing_lint_rules.md).
+  * See [our guide on Writing Custom Lint Rules](https://github.com/mozilla-mobile/firefox-android/blob/main/docs/shared/android/writing_lint_rules.md).
 
 * Localization happens on [Pontoon](https://pontoon.mozilla.org/projects/firefox-for-android/). Please get in touch with delphine (at) mozilla (dot) com directly for more information.
 
-**Beginners!** - Watch out for [Issues with the "Good First Issue" label](https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22). These are easy bugs that have been left for first timers to have a go, get involved and make a positive contribution to the project!
+**Beginners!** - Watch out for [Issues tagged with "good-first-issue"](https://bugzilla.mozilla.org/buglist.cgi?list_id=16676358&resolution=---&keywords=good-first-bug&product=Fenix&keywords_type=allwords&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&query_format=advanced). These are easy bugs that have been left for first timers to have a go, get involved and make a positive contribution to the project!
 
 
 ## I want to open a Pull Request!
 
 We encourage you to participate in this open source project. We love Pull Requests, Bug Reports, ideas, (security) code reviews or any other kind of positive contribution.
 
-Since we are a small team, however, **we do not have the bandwidth to review unsolicited PRs**. Please follow our [Pull Request guidelines](https://github.com/mozilla-mobile/shared-docs/blob/master/android/CONTRIBUTING_code.md#creating-a-pull-request), or **we may close the PR**.
+Since we are a small team, however, **we do not have the bandwidth to review unsolicited PRs**. Please follow our [Pull Request guidelines](https://github.com/mozilla-mobile/firefox-android/blob/main/docs/shared/android/CONTRIBUTING_code.md#creating-a-pull-request), or **we may close the PR**.
 
 To make it easier to review, we have these PR requirements:
 
@@ -71,12 +70,12 @@ Please keep in mind that even though a feature you have in mind may seem like a 
 
 Pre-requisites:
 * Android SDK
-* To run command line tools, you'll need to configure Java: see [our how-to guide](https://github.com/mozilla-mobile/shared-docs/blob/master/android/configure_java.md).
+* To run command line tools, you'll need to configure Java: see [our how-to guide](https://github.com/mozilla-mobile/firefox-android/blob/main/docs/shared/android/configure_java.md).
 
 1. Clone or Download the repository:
 
   ```shell
-  git clone https://github.com/mozilla-mobile/fenix
+  git clone https://github.com/mozilla-mobile/firefox-android
   ```
 
 2. **Import** the project into Android Studio **or** build on the command line:
@@ -133,7 +132,7 @@ Using this hook will guarantee your hook gets updated as the repository changes.
 This hook tries to run as much as possible without taking too much time.
 
 Before you can run the hook, you'll need to configure Java properly because it relies on command line tools: see
-[our how-to guide](https://github.com/mozilla-mobile/shared-docs/blob/master/android/configure_java.md).
+[our how-to guide](https://github.com/mozilla-mobile/firefox-android/blob/main/docs/shared/android/configure_java.md).
 
 To add it on Mac/Linux, run this command from the project root:
 ```sh
@@ -211,7 +210,7 @@ In order to build successfully, you need to check out a commit in the dependency
 - Run the `<android-components>/tools/list_compatible_dependency_versions.py` script to output a compatible commit
 - Check out the latest commit from main in this repository and the dependency repository. However, this may fail if there were breaking changes added recently to the dependency.
 
-If you're trying to build fenix with a local ac AND a local GV, you'll have to use another method: see [this doc](https://github.com/mozilla-mobile/fenix/blob/main/docs/substituting-local-ac-and-gv.md).
+If you're trying to build fenix with a local ac AND a local GV, you'll have to use another method: see [this doc](https://github.com/mozilla-mobile/firefox-android/blob/main/fenix/docs/substituting-local-gv.md).
 
 ### Using Nimbus servers during local development
 If you're working with the Nimbus experiments platform, by default for local development Fenix configures Nimbus to not use a server.
